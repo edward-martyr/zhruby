@@ -1,10 +1,30 @@
-Metadata-Version: 1.0
+Metadata-Version: 2.1
 Name: zhruby
-Version: 2.0
+Version: 2.0.2
 Summary: Zaonhe Ruby. Output TeX and PDF with Shanghainese ruby from Chinese passages.
 Home-page: https://github.com/edward-martyr/zhruby
 Author: Edward Martyr
 Author-email: edwardmartyr@outlook.com
 License: MIT
-Description: UNKNOWN
+Description: # Zaonhe Ruby (zhruby) <ruby>上海話吳語協會式注音<rt>Zaonhegho Wunyu–Yahwe-Seh Tsyin</ruby>
+        
+        Converts Traditional Chinese passage to TeX-flavoured ruby and outputs PDF. Requires `xelatex` and [`ctex`](https://github.com/CTeX-org/ctex-kit).
+        
+        輸入中文文本文檔，輸出上海話注音的 LaTeX 文檔及 PDF。需要 `xelatex` 和 [`ctex`](https://github.com/CTeX-org/ctex-kit)。
+        
+        ## Installation
+        
+        ```bash
+        python3 -m pip install zhruby==2.0.2
+        ```
+        
+        ## Usage
+        
+        ```bash
+        python3 -m zhruby [list of text files]
+        ```
+        
+        Append `-s` to output simplified documents.
+        
 Platform: UNKNOWN
+Description-Content-Type: text/markdown
