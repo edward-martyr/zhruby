@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(name='zhruby',
-version='0.1',
+version='1.1',
 description='Zaonhe Ruby. Output TeX and PDF with Shanghainese ruby from Chinese passages.',
 url='https://github.com/edward-martyr/zhruby',
 author='Edward Martyr',

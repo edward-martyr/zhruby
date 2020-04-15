@@ -7,7 +7,7 @@ Converts Traditional Chinese passage to TeX-flavoured ruby and outputs PDF. Requ
 ## Installation
 
 ```bash
-python3 -m pip install zhruby
+python3 -m pip install zhruby==1.1
 ```
 
 ## Usage

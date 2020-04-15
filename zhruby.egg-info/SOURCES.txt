@@ -1,6 +1,8 @@
 README.md
 setup.py
 zhruby/__init__.py
+zhruby/__main__.py
+zhruby/dict.py
 zhruby.egg-info/PKG-INFO
 zhruby.egg-info/SOURCES.txt
 zhruby.egg-info/dependency_links.txt
