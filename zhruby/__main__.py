@@ -5,16 +5,20 @@ from zhruby.dict import d
 
 
 def main():
-    cc = opencc.OpenCC('s2t')
+    st = opencc.OpenCC('s2t')
+    ts = opencc.OpenCC('t2s')
 
     parser = argparse.ArgumentParser(description='Input: Chinese text file, output: TeX file with Shanghainese ruby.')
-    parser.add_argument('files', metavar='text files separated by space', type=str, nargs='+', help='Please input a Traditional Chinese text file.')
+    parser.add_argument('files', metavar='<text files>', type=str, nargs='+', help='Please input a Traditional Chinese text file.')
+    parser.add_argument('-s', '--simplified', action='store_const',
+                    const=True, default=False,
+                    help='Output simplified document.')
     args = parser.parse_args()
     files=args.files
 
     for file in files:
         f = open(file, "r")
-        txt = cc.convert(f.read())
+        txt = st.convert(f.read())
         f.close()
         
         counter=0
@@ -41,6 +45,9 @@ def main():
                         outt+=r'\ruby{'+tp[0][i]+r'}{'+tp[1].split()[i]+r'}'
                 else:
                     outt+=r'\ruby{'+tp[0]+r'}{'+tp[1]+r'}'
+        
+        if args.simplified:
+            outt = ts.convert(outt)
         
         fo=open(file+'.ruby.tex', 'w')
         fo.writelines(r'''% !TEX program = xelatex
