@@ -7,5 +7,6 @@ url='https://github.com/edward-martyr/zhruby',
 author='Edward Martyr',
 author_email='edwardmartyr@outlook.com',
 license='MIT',
-packages=setuptools.find_packages()
+packages=setuptools.find_packages(),
+zip_safe=False
 )

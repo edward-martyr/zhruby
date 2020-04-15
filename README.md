@@ -6,12 +6,12 @@ Converts Traditional Chinese passage to TeX-flavoured ruby and outputs PDF. Requ
 
 ## Installation
 
-```terminal
-pip install -i https://test.pypi.org/simple/ zhruby
+```bash
+python3 -m pip install zhruby
 ```
 
 ## Usage
 
-```terminal
+```bash
 python3 -m zhruby [list of text files]
 ```
