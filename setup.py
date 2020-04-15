@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='zhruby',
-    version='2.0.2',
+    version='2.0.3',
     description='Zaonhe Ruby. Output TeX and PDF with Shanghainese ruby from Chinese passages.',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -15,5 +15,8 @@ setuptools.setup(
     author_email='edwardmartyr@outlook.com',
     license='MIT',
     packages=setuptools.find_packages(),
+    install_requires=[
+        'opencc',
+    ],
     zip_safe=False
 )

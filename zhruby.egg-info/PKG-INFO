@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: zhruby
-Version: 2.0.2
+Version: 2.0.3
 Summary: Zaonhe Ruby. Output TeX and PDF with Shanghainese ruby from Chinese passages.
 Home-page: https://github.com/edward-martyr/zhruby
 Author: Edward Martyr
@@ -15,7 +15,7 @@ Description: # Zaonhe Ruby (zhruby) <ruby>上海話吳語協會式注音<rt>Zaon
         ## Installation
         
         ```bash
-        python3 -m pip install zhruby==2.0.2
+        python3 -m pip install zhruby==2.0.3
         ```
         
         ## Usage

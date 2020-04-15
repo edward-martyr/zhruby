@@ -7,4 +7,5 @@ zhruby.egg-info/PKG-INFO
 zhruby.egg-info/SOURCES.txt
 zhruby.egg-info/dependency_links.txt
 zhruby.egg-info/not-zip-safe
+zhruby.egg-info/requires.txt
 zhruby.egg-info/top_level.txt
