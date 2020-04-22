@@ -1,7 +1,7 @@
 import argparse
 from os import system
 import opencc
-from zhruby.dict import d
+from .dict import d
 
 
 def main():
